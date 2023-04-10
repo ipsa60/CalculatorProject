@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+<body>
+<table class="calculator" > 
+  <!-- creating a class named calculator-->
+  <tr> 
+    <!-- table rows creation-->
+    <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td> 
+    <-colspan is used for the span of columns used in the input class like given value of colspan is 3 so it will use 3 columns in the table-->
+    <!-- clearScreen() function clears all the values -->
+    <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+      <!-- table definitions--> <!-- value C defines the button used to clear screen-->
+      <!--type is an attribute of input used to define the type of input we are giving to the webpage here we have given button type-->
+  </tr>
+  <tr>
+    <!-- display() function displays the value of clicked button -->
+    <td> <input type="button" value="1" onclick="display('1')" /> </td>
+    <!-- here we are defining various buttons of calculator and their values-->
+    <td> <input type="button" value="2" onclick="display('2')" /> </td>
+    <!-- onclick is used to click on button and give output immediately-->
+    <td> <input type="button" value="3" onclick="display('3')" /> </td>
+    <td> <input type="button" value="/" onclick="display('/')" /> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="4" onclick="display('4')" /> </td>
+    <td> <input type="button" value="5" onclick="display('5')" /> </td>
+    <td> <input type="button" value="6" onclick="display('6')" /> </td>
+    <td> <input type="button" value="-" onclick="display('-')" /> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="7" onclick="display('7')" /> </td>
+    <td> <input type="button" value="8" onclick="display('8')" /> </td>
+    <td> <input type="button" value="9" onclick="display('9')" /> </td>
+    <td> <input type="button" value="+" onclick="display('+')" /> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" value="." onclick="display('.')" /> </td>
+    <td> <input type="button" value="0" onclick="display('0')" /> </td>
+    <!-- calculate() function evaluates the mathematical expression -->
+    <td> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
+    <td> <input type="button" value="*" onclick="display('*')" /> </td>
+  </tr>
+</table>
+  <!-- attaching javascript file to this html file-->
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+ 
